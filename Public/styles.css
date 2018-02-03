@@ -1,0 +1,32 @@
+/*body{
+    width:100%;
+    height:100px;
+    background-color:black;
+}*/
+button{
+   margin:1rem; 
+}
+header{
+    background-color:grey;
+    width:100%;
+    height:20rem;
+    padding:1rem;
+}
+
+.page{
+
+    margin-top:5rem;
+}
+
+.low{
+    background-color:white;
+}
+
+.high{
+        background-color:white;
+
+}
+
+.low_text{
+    color:white;
+}

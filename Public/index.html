@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D"
+        crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script src="./game.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <h1>Guessing Game</h1>
+                    <div id="message"></div>
+                    <div id="message2"></div>
+
+                </div>
+                <div class="col-4">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container page">
+
+        <div class="row text-center">
+            <div class="col-4 low">
+<div class="low_text text-center">
+                    
+                </div>
+            </div>
+            <div class="col-4">
+
+                <button id="Sign_in" type="button" class="btn btn-primary">Sign in</button>
+
+                <button id="login" type="button" class="btn btn-primary">Log in</button>
+
+                <form id="register" style="display:none" method="POST" action="/sign">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input type="username" class="form-control" id="name" placeholder="Example input" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Username</label>
+                        <input type="username" class="form-control" id="username" placeholder="Example input" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Another input" name="email">
+                    </div>
+                    <input id="target" type="button" class="btn btn-primary" value="submit">
+
+                </form>
+
+                <form id="enter" style="display:none">
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"> Username</label>
+                        <input type="username" class="form-control" id="username2" placeholder="Example input">
+                    </div>
+                    <button id="target2" type="button" class="btn btn-primary">Submit</button>
+
+                </form>
+
+                <form id="setgame" style="display:none" method="POST" action="/game">
+                    <div id="easy" class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Easy</label>
+                    </div>
+                    <div id="medium" class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Medium</label>
+                    </div>
+                    <div id="hard" class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Hard</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" id="lab1"> </label>
+                        <input type="text" class="form-control" id="Inumber" placeholder="Example input">
+                        <input type="text" class="form-control" id="guess" placeholder="Example input" style="display:none">
+
+                    </div>
+                    <button id="set" type="button" class="btn btn-primary"></button>
+                    <button id="setguess" type="button" class="btn btn-primary" style="display:none"></button>
+                    <div id="maxguess"></div>
+                </form>
+            </div>
+            <div class="col-4 high">
+                <div class="high_text text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Don't need anything here for now -->
+</body>
+
+</html>
