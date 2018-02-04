@@ -8,10 +8,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-function Infos(name, username, email) {
+function Infos(name, username, email, History) {
     this.name = name,
     this.username = username,
-    this.email = email
+    this.email = email,
+    this.history = []
 }
 
 function History(game) {
